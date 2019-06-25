@@ -1,0 +1,17 @@
+spring:
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/demo1?useSSL=false&useUnicode=true&characterEncoding=utf-8&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+    hikari:
+      minimum-idle: 5
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
